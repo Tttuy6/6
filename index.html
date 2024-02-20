@@ -1,206 +1,942 @@
-#####################
-Batch Text Replacer Demo ID:505310172
-#####################
 <!DOCTYPE html>
-<html>
-<head><meta name="apple-mobile-web-app-capable" content="yes">
-<meta charset="utf-8">
-<title>Monster Tracks - Classroom 6x</title>
-<meta name="description" content="Monster Tracks Game at Classroom6x.Github.io: Enjoy browser play, fullscreen action, and an ad-free gaming experience. Dive into fun today!" >
-<!-- Stylesheets -->
-<link href="../css/bootstrap.css" rel="stylesheet">
-<link href="../css/style.css" rel="stylesheet">
-<link href="../css/responsive.css" rel="stylesheet">
+<html lang="en" dir="ltr">
+	<head>
 
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-<link rel="icon" type="image/x-icon" href="https://ssl.gstatic.com/classroom/favicon.png">  
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<title>Monster Tracks  - bigshotboxing.github.io</title>
+    <meta name="theme-color" content="#83ffe7">
+		<meta name="description" content="Monster Tracks - bigshotboxing.github.io: on Chromebook delivers seamless, lag-free gaming with an optimized interface, ensuring an enjoyable and safe experience for players of all ages">
+    <link rel="icon" href="../images/favicon.png" sizes="32x32">
 
-<!-- Responsive -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-G8FFV9R4G4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-G8FFV9R4G4');
-</script>
+      <meta property="og:url" content="https://bigshotboxing.github.io/play/monster-tracks.html" />
+      <meta property="og:image:width" content="200 px" />
+      <meta property="og:image:height" content="200 px" />
+      <meta property="og:title" content="Monster Tracks" />
+      <meta property="og:site_name" content="Monster Tracks" />
+      <meta property="og:description" content="Monster Tracks - bigshotboxing.github.io: on Chromebook delivers seamless, lag-free gaming with an optimized interface, ensuring an enjoyable and safe experience for players of all ages" />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="https://boxing2.github.io/img/monster-tracks.png">
 
 
 
+  	<style type="text/css">
+.report-modal {
+  display: none;
+  position: fixed;
+  z-index: 20;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+.report-modal-content {
+  background-color: #fefefe;
+  color: #000;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 320px;
+}
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.report-label {
+  padding: 0 10px;
+  margin-right: 5px;
+  border-radius: 15px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+</style>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/jquery-comments.css" />
+		<link rel="stylesheet" type="text/css" href="../css/user.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../css/custom.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+		<!-- Font Awesome icons (free version)-->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<!-- Google fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
-     
-<link rel="manifest" href="/manifest.json" /></head>
+<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-1G0TXECHRG"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-1G0TXECHRG'); </script>
 
-<body>
 
-<div class="page-wrapper">
- 	
 
- 	
- 	<!-- Main Header -->
-    <header class="main-header">
-    	
-        <!-- Header Lower -->
-        <div class="header-lower">
-            
-			<div class="auto-container">
-				<div class="inner-container d-flex justify-content-between align-items-center">
-					
-					<div class="logo-box d-flex align-items-center">
-						
+</head>
+	<body id="page-top" style="background: url('../images/background1.png'); background-size: cover;">
+
+
+<!-- Navigation-->
+		<nav class="navbar navbar-expand-lg navbar-dark top-nav" id="mainNav">
+			<div class="container">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="navbar-brand js-scroll-trigger" href="/">
+          <img src="../images/logo.png" width="70" height="35" class="topVAZ-logo" alt="apk logo">
+        </a>
+
+
+				<div class="navbar-collapse collapse" id="nav-menu">
+
 		
-						
-						<!-- Logo -->
-						<div class="logo"><a href="/"><strong>Classroom 6x</strong></a></div>
-					</div>
-					<div class="nav-outer clearfix">
-						
-						<!-- Main Menu -->
-						<nav class="main-menu show navbar-expand-md">
-							<div class="navbar-header">
-								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-							</div>
-							
-							<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
-
-
-				               <ul class="navigation clearfix">
-
-				                  <li><a href="/classroom6x//category/popular.html">Popular</a></li>
-				                  <li><a href="/classroom6x//category/car.html">Car</a></li>
-				                  <li><a href="/classroom6x//category/sports.html">Sports</a></li>
-				                  <li><a href="/classroom6x//category/running.html">Running</a></li>
-				                  <li><a href="/classroom6x//category/new.html">New</a></li>
-				                  <li class="nav-item dropdown"><a href="/classroom6x/#" data-bs-toggle="dropdown">More</a>
-				                    <ul role="menu" class="dropdown-menu">
-				                      <li><a class="dropdown-item" href="/classroom6x//category/3d.html">3D</a></li>
-				                      <li><a class="dropdown-item" href="/classroom6x//category/2-player.html">2 Player</a></li>
-				                      <li><a class="dropdown-item" href="/classroom6x//category/racing.html">Racing</a></li>                      
-				                      <li><a class="dropdown-item" href="/classroom6x//category/multiplayer.html">Multiplayer</a></li>
-				                      <li><a class="dropdown-item" href="/classroom6x//category/moto.html">Moto</a></li>
-				                      <li><a class="dropdown-item" href="/classroom6x//category/stickman.html">Stickman</a></li>
-				                      <li><a class="dropdown-item" href="/classroom6x//category/puzzle.html">Puzzle</a></li>
-				                      <li><a class="dropdown-item" href="/classroom6x//category/adventure.html">Adventure</a></li>
-				                      <li><a class="dropdown-item" href="/classroom6x//category/shooting.html">Shooting</a></li>
-				                      <li><a class="dropdown-item" href="/classroom6x//category/skill.html">Skill</a></li>                                       
-
-				                    </ul>
-				                  </li>
-				            
-				                
-				                </ul>
-
-
-
-
-							</div>
-							
-						</nav>
-						<!-- Main Menu End-->
-						
-					</div>
-	
-
-					<!-- Outer Box -->
-
-					<!-- End Outer Box -->
-
-
 
 				</div>
-				
-			</div>
-        </div>
-        <!-- End Header Lower -->
+				<div class="d-none d-lg-block">
+			
+
+
+        <ul class="navbar-nav">
+        		
+
+
+            <li class="nav-item "><a class="nav-link " href="/category/running.html">Running</a></li>
+            <li class="nav-item "><a class="nav-link " href="/category/puzzle.html">Puzzle</a></li>
+            <li class="nav-item "><a class="nav-link " href="/category/racing.html">Racing</a></li>
+            <li class="nav-item "><a class="nav-link " href="/category/skill.html">Skill</a></li>
+            <li class="nav-item "><a class="nav-link " href="/category/sports.html">Sports</a></li>
+            <li class="nav-item "><a class="nav-link " href="/category/car.html">Car</a></li>
+
+
         
-		<!-- Sticky Header  -->
-        <div class="sticky-header">
-            <div class="auto-container">
-				<div class="d-flex justify-content-between align-items-center">
-					<!-- Logo -->
-					<div class="logo">
-						<a href="/classroom6x//" title=""><strong>Classroom 6x</strong></a>
-					</div>
-					
-					<!-- Right Col -->
-					<div class="right-box">
-						<!-- Main Menu -->
-						<nav class="main-menu">
-							<!--Keep This Empty / Menu will come through Javascript-->
-						</nav>
-						<!-- Main Menu End-->
-						
-						<!-- Mobile Navigation Toggler -->
-						<div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
-					</div>
-					
+
+
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">More</a>
+              <ul role="menu" class="dropdown-menu">
+    
+                <li><a class="dropdown-item" href="/category/shooting.html">Shooting</a></li>
+                <li><a class="dropdown-item" href="/category/moto.html">Moto</a></li>
+                <li><a class="dropdown-item" href="/category/stickman.html">Stickman</a></li>
+                <li><a class="dropdown-item" href="/category/adventure.html">Adventure</a></li>
+                <li><a class="dropdown-item" href="/category/multiplayer.html">Multiplayer</a></li>
+
+            </ul>
+            </li>
+
+          </ul>
+
+
+
 				</div>
-            </div>
-        </div>
-		<!-- End Sticky Menu -->
-    
-		<!-- Mobile Menu  -->
-        <div class="mobile-menu">
-            <div class="menu-backdrop"></div>
-            <div class="close-btn"><span class="icon flaticon-multiply"></span></div>
-            <nav class="menu-box">
-                <div class="nav-logo"><a href="/"><strong>Classroom 6x</strong></a></div>
-				<!-- Search -->
-
-                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
-            </nav>
-        </div>
-		<!-- End Mobile Menu -->
-	
-    </header>
-    <!-- End Main Header -->
-		
+			</div>
+		</nav>		
 
 
 
 
 
- 
-    <!-- Game -->
-    <div style="margin-top: 20px;" class="container" align="Center">
-    
-    	<h1>Monster Tracks</h1>
+
+
+
+
+
+<div class="container game-wrapper">
+<div style="padding-bottom: 20px">
+     <!-- ads_ngang-->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7163348179872343"
+        crossorigin="anonymous"></script>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-7163348179872343"
+           data-ad-slot="4527351688"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+</div>
+
+
+
+
+
+  <div class="row">
+      <div class="col-md-9">
+          	<div class="game-container">
+          		<div class="game-content" data-id="169">
+          			<div id="allow_mobile_version"></div>			
+               <!-- 
+                <div id="mobile-play" style="display: none;">
+          				<div class="mobile-thumb-play">
+          					<img src="#">
+          				</div>
+          				<div id="mobile-play-btn">
+          					<i class="bi bi-play-circle-fill"></i>
+          				</div>
+          			</div> -->
+
+
+
+          			<div class="game-iframe-container" id="game-player">
+          				<div id="mobile-back-button" draggable="true">
+          					<i class="bi bi-x-circle-fill"></i>
+          				</div>
+          				<iframe class="game-iframe" id="game-area" src="https://boxing2.github.io/b5/monster-tracks" width="480" height="800" scrolling="none" frameborder="0" allowfullscreen></iframe>
+          			</div>
+          		</div>
+
+
+          		<div class="game-info">
+          			<div class="header-left">
+          				<h1 class="single-title">Monster Tracks</h1>
+
+
+          			</div>
+          			<div class="header-right">
+
+
+          				<div class="b-action2">
+          		
+          					<a href="#" onclick="open_fullscreen()" class="btn btn-capsule"><i class="bi bi-arrows-fullscreen b-icon"></i>Fullscreen</a>
+          				</div>
+          			</div>
+          		</div>
+          	</div>
+
+      </div><!-- end col-9 -->
       
-      <iframe class="gm-iframe" id="gm-area" src="https://h5cdn.github.io/s5/monster-tracks" width="840" height="560" scrolling="none" frameborder="0" allowfullscreen></iframe>
-	       <div style="padding-top: 10px;padding-bottom: 10px;"  class="container" align="Center"> 
-	          <button class="theme-btn btn-style-one" onclick="openFullscreen();">FullScreen</button>
+
+      <div class="col-md-3">
+        <div style="">
+          <!-- ads_doc -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7163348179872343"
+       crossorigin="anonymous"></script>
+    <!-- d_ads -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-7163348179872343"
+         data-ad-slot="1633595039"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+        </div>
+      </div>
 
 
-	       </div>
+  </div><!-- end row -->
 
-	    <script>
-	    var elem = document.getElementById("gm-area");
-	    function openFullscreen() {
-	      if (elem.requestFullscreen) {
-	        elem.requestFullscreen();
-	      } else if (elem.webkitRequestFullscreen) { /* Safari */
-	        elem.webkitRequestFullscreen();
-	      } else if (elem.msRequestFullscreen) { /* IE11 */
-	        elem.msRequestFullscreen();
-	      }
-	    }
-	    </script>
+
+</div> <!-- end row container game-wrapper-->
+
+
+
+
+
+
+
+<div class="container">
+<div class="banner-ad-wrapper">
+  <div class="banner-ad-content" style="padding: 20px 0; text-align: center;">
+   <!-- ads_ngang -->       
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7163348179872343"
+        crossorigin="anonymous"></script>
+      <!-- ng_ads -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-7163348179872343"
+           data-ad-slot="4527351688"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+
+
+              </div>
+            </div>
+
+
+
+
+
+	<div class="content-wrapper">
+		<div class="row">
+			
+
+			<div class="col-md-5">
+				<div class="sidebar">
+	
+
+
+
+
+
+
+
+
+
+
+
+</div>			
+
+
+
+</div>
+</div>
+</div>
+
+
+
+
+	<div class="bottom-container">
+		<h2 class="item-title">You might also Like</h2>
+		<div class="row">
+
+<!-- 
+
+<div class="col-lg-2 col-md-4 col-6 grid-3">
+  <a href="/play/monster-tracks.html">
+  <div class="game-item">
+    <div class="list-game">
+      <div class="list-thumbnail"><img src="https://boxing2.github.io/img/monster-tracks.png" data-src="https://boxing2.github.io/img/monster-tracks.png" class="lazyload" alt="Monster Tracks"></div>
+      <div class="list-info">
+        <div class="list-title">Monster Tracks</div>
+      </div>
+    </div>
+  </div>
+  </a>
+</div>  
+
+ -->
+
+
+
+
+
+
+<div class="col-lg-2 col-md-4 col-6 grid-3">
+  <a href="/play/retro-bowl.html">
+  <div class="game-item">
+    <div class="list-game">
+      <div class="list-thumbnail"><img src="https://boxing2.github.io/img/retro-bowl.png" data-src="https://boxing2.github.io/img/retro-bowl.png" class="lazyload" alt="Retro Bowl"></div>
+    </div>
+  </div>
+  </a>
+</div>
+
+
+<div class="col-lg-2 col-md-4 col-6 grid-3">
+  <a href="/play/bitlife.html">
+  <div class="game-item">
+    <div class="list-game">
+      <div class="list-thumbnail"><img src="https://boxing2.github.io/img/bitlife.png" data-src="https://boxing2.github.io/img/bitlife.png" class="lazyload" alt="Bitlife"></div>
+    </div>
+  </div>
+  </a>
+</div>
+
+
+<div class="col-lg-2 col-md-4 col-6 grid-3">
+  <a href="/play/subway-surfers.html">
+  <div class="game-item">
+    <div class="list-game">
+      <div class="list-thumbnail"><img src="https://boxing2.github.io/img/subway-surfers.png" data-src="https://boxing2.github.io/img/subway-surfers.png" class="lazyload" alt="Subway Surfers Sanfransisco"></div>
+    </div>
+  </div>
+  </a>
+</div>
+
+
+<div class="col-lg-2 col-md-4 col-6 grid-3">
+  <a href="/play/subway-surfers-beijing.html">
+  <div class="game-item">
+    <div class="list-game">
+      <div class="list-thumbnail"><img src="https://boxing2.github.io/img/subway-surfers-beijing.png" data-src="https://boxing2.github.io/img/subway-surfers-beijing.png" class="lazyload" alt="Subway Surfers Beijing"></div>
+    </div>
+  </div>
+  </a>
+</div>
+
+
+<div class="col-lg-2 col-md-4 col-6 grid-3">
+  <a href="/play/subway-surfers-newyork.html">
+  <div class="game-item">
+    <div class="list-game">
+      <div class="list-thumbnail"><img src="https://boxing2.github.io/img/subway-surfers-newyork.png" data-src="https://boxing2.github.io/img/subway-surfers-newyork.png" class="lazyload" alt="Subway Surfers Newyork"></div>
+    </div>
+  </div>
+  </a>
+</div>
+
+
+<div class="col-lg-2 col-md-4 col-6 grid-3">
+  <a href="/play/subway-surfers-houston.html">
+  <div class="game-item">
+    <div class="list-game">
+      <div class="list-thumbnail"><img src="https://boxing2.github.io/img/subway-surfers-houston.png" data-src="https://boxing2.github.io/img/subway-surfers-houston.png" class="lazyload" alt="Subway Surfers Houston"></div>
+    </div>
+  </div>
+  </a>
+</div>
+
+
+<div class="col-lg-2 col-md-4 col-6 grid-3">
+  <a href="/play/subway-surfers-monaco.html">
+  <div class="game-item">
+    <div class="list-game">
+      <div class="list-thumbnail"><img src="https://boxing2.github.io/img/subway-surfers-monaco.png" data-src="https://boxing2.github.io/img/subway-surfers-monaco.png" class="lazyload" alt="Subway Surfers Monaco"></div>
+    </div>
+  </div>
+  </a>
+</div>
+
+
+<div class="col-lg-2 col-md-4 col-6 grid-3">
+  <a href="/play/drive-mad.html">
+  <div class="game-item">
+    <div class="list-game">
+      <div class="list-thumbnail"><img src="https://boxing2.github.io/img/drive-mad.png" data-src="https://boxing2.github.io/img/drive-mad.png" class="lazyload" alt="Drive Mad"></div>
+    </div>
+  </div>
+  </a>
+</div>
+
+
+<div class="col-lg-2 col-md-4 col-6 grid-3">
+  <a href="/play/crossy-road.html">
+  <div class="game-item">
+    <div class="list-game">
+      <div class="list-thumbnail"><img src="https://boxing2.github.io/img/crossy-road.png" data-src="https://boxing2.github.io/img/crossy-road.png" class="lazyload" alt="Crossy Road"></div>
+    </div>
+  </div>
+  </a>
+</div>
+
+
+<div class="col-lg-2 col-md-4 col-6 grid-3">
+  <a href="/play/monkey-mart.html">
+  <div class="game-item">
+    <div class="list-game">
+      <div class="list-thumbnail"><img src="https://boxing2.github.io/img/monkey-mart.png" data-src="https://boxing2.github.io/img/monkey-mart.png" class="lazyload" alt="Monkey Mart"></div>
+    </div>
+  </div>
+  </a>
+</div>
+
+
+<div class="col-lg-2 col-md-4 col-6 grid-3">
+  <a href="/play/g-switch-3.html">
+  <div class="game-item">
+    <div class="list-game">
+      <div class="list-thumbnail"><img src="https://boxing2.github.io/img/g-switch-3.png" data-src="https://boxing2.github.io/img/g-switch-3.png" class="lazyload" alt="G Switch 3"></div>
+    </div>
+  </div>
+  </a>
+</div>
+
+
+<div class="col-lg-2 col-md-4 col-6 grid-3">
+  <a href="/play/tunnel-rush.html">
+  <div class="game-item">
+    <div class="list-game">
+      <div class="list-thumbnail"><img src="https://boxing2.github.io/img/tunnel-rush.png" data-src="https://boxing2.github.io/img/tunnel-rush.png" class="lazyload" alt="Tunnel Rush"></div>
+    </div>
+  </div>
+  </a>
+</div>
+
+
+<div class="col-lg-2 col-md-4 col-6 grid-3">
+  <a href="/play/temple-run-2.html">
+  <div class="game-item">
+    <div class="list-game">
+      <div class="list-thumbnail"><img src="https://boxing2.github.io/img/temple-run-2.png" data-src="https://boxing2.github.io/img/temple-run-2.png" class="lazyload" alt="Temple Run 2"></div>
+    </div>
+  </div>
+  </a>
+</div>
+
+
+<div class="col-lg-2 col-md-4 col-6 grid-3">
+  <a href="/play/stickman-hook.html">
+  <div class="game-item">
+    <div class="list-game">
+      <div class="list-thumbnail"><img src="https://boxing2.github.io/img/stickman-hook.png" data-src="https://boxing2.github.io/img/stickman-hook.png" class="lazyload" alt="Stickman Hook"></div>
+    </div>
+  </div>
+  </a>
+</div>
+
+
+<div class="col-lg-2 col-md-4 col-6 grid-3">
+  <a href="/play/doodle-jump.html">
+  <div class="game-item">
+    <div class="list-game">
+      <div class="list-thumbnail"><img src="https://boxing2.github.io/img/doodle-jump.png" data-src="https://boxing2.github.io/img/doodle-jump.png" class="lazyload" alt="Doodle Jump"></div>
+    </div>
+  </div>
+  </a>
+</div>
+
+
+<div class="col-lg-2 col-md-4 col-6 grid-3">
+  <a href="/play/raft-wars-2.html">
+  <div class="game-item">
+    <div class="list-game">
+      <div class="list-thumbnail"><img src="https://boxing2.github.io/img/raft-wars-2.png" data-src="https://boxing2.github.io/img/raft-wars-2.png" class="lazyload" alt="Raft Wars 2"></div>
+    </div>
+  </div>
+  </a>
+</div>
+
+
+<div class="col-lg-2 col-md-4 col-6 grid-3">
+  <a href="/play/raft-wars.html">
+  <div class="game-item">
+    <div class="list-game">
+      <div class="list-thumbnail"><img src="https://boxing2.github.io/img/raft-wars.png" data-src="https://boxing2.github.io/img/raft-wars.png" class="lazyload" alt="Raft Wars"></div>
+    </div>
+  </div>
+  </a>
+</div>
+
+
+<div class="col-lg-2 col-md-4 col-6 grid-3">
+  <a href="/play/stick-merge.html">
+  <div class="game-item">
+    <div class="list-game">
+      <div class="list-thumbnail"><img src="https://boxing2.github.io/img/stick-merge.png" data-src="https://boxing2.github.io/img/stick-merge.png" class="lazyload" alt="Stick Merge"></div>
+    </div>
+  </div>
+  </a>
+</div>
+
+
+<div class="col-lg-2 col-md-4 col-6 grid-3">
+  <a href="/play/temple-of-boom.html">
+  <div class="game-item">
+    <div class="list-game">
+      <div class="list-thumbnail"><img src="https://boxing2.github.io/img/temple-of-boom.png" data-src="https://boxing2.github.io/img/temple-of-boom.png" class="lazyload" alt="Temple Of Boom"></div>
+    </div>
+  </div>
+  </a>
+</div>
+
+
+<div class="col-lg-2 col-md-4 col-6 grid-3">
+  <a href="/play/dreadhead-parkour.html">
+  <div class="game-item">
+    <div class="list-game">
+      <div class="list-thumbnail"><img src="https://boxing2.github.io/img/dreadhead-parkour.png" data-src="https://boxing2.github.io/img/dreadhead-parkour.png" class="lazyload" alt="Dreadhead Parkour"></div>
+    </div>
+  </div>
+  </a>
+</div>
+
+
+<div class="col-lg-2 col-md-4 col-6 grid-3">
+  <a href="/play/blumgi-rocket.html">
+  <div class="game-item">
+    <div class="list-game">
+      <div class="list-thumbnail"><img src="https://boxing2.github.io/img/blumgi-rocket.png" data-src="https://boxing2.github.io/img/blumgi-rocket.png" class="lazyload" alt="Blumgi Rocket"></div>
+    </div>
+  </div>
+  </a>
+</div>
+
+
+<div class="col-lg-2 col-md-4 col-6 grid-3">
+  <a href="/play/monster-tracks.html">
+  <div class="game-item">
+    <div class="list-game">
+      <div class="list-thumbnail"><img src="https://boxing2.github.io/img/monster-tracks.png" data-src="https://boxing2.github.io/img/monster-tracks.png" class="lazyload" alt="Monster Tracks"></div>
+    </div>
+  </div>
+  </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div> <!-- end row You might also Like -->
+	
+
+
+
+
+
+
+
+
+</div> <!-- end container -->
+
+
+
+
+
+  <div class="banner-ad-wrapper">
+    <div class="banner-ad-content" style="padding: 20px 0; text-align: center;">
+      
+      <!-- ads -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7163348179872343"
+        crossorigin="anonymous"></script>
+      <!-- ng_ads -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-7163348179872343"
+           data-ad-slot="4527351688"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
 
 
     </div>
-    <!-- end Game -->
+  </div>
+
+
+
+
+
+  <!-- Popular games section -->
+  <h3 class="section-title">Popular games</h3>
+  <div class="row grid-container">
+  
+
+
+
+
+  <div class="col-lg-4 col-md-6 grid-2">
+    <a href="/play/slope.html">
+    <div class="game-item">
+      <div class="list-game">
+        <div class="list-thumbnail"><img src="https://boxing2.github.io/img/slope.png" data-src="https://boxing2.github.io/img/slope.png" class="small-thumb img-rounded lazyload" alt="Slope"></div>
+        <div class="list-info">
+          <div class="list-title">Slope</div>
+          <div class="list-category">Running</div>
+    
+
+        </div>
+      </div>
+    </div>
+    </a>
+  </div>  
+
+
+  <div class="col-lg-4 col-md-6 grid-2">
+    <a href="/play/stack.html">
+    <div class="game-item">
+      <div class="list-game">
+        <div class="list-thumbnail"><img src="https://boxing2.github.io/img/stack.png" data-src="https://boxing2.github.io/img/stack.png" class="small-thumb img-rounded lazyload" alt="Stack"></div>
+        <div class="list-info">
+          <div class="list-title">Stack</div>
+          <div class="list-category">Skill</div>
+    
+
+        </div>
+      </div>
+    </div>
+    </a>
+  </div>  
+
+
+  <div class="col-lg-4 col-md-6 grid-2">
+    <a href="/play/stack-ball.html">
+    <div class="game-item">
+      <div class="list-game">
+        <div class="list-thumbnail"><img src="https://boxing2.github.io/img/stack-ball.png" data-src="https://boxing2.github.io/img/stack-ball.png" class="small-thumb img-rounded lazyload" alt="Stack Ball"></div>
+        <div class="list-info">
+          <div class="list-title">Stack Ball</div>
+          <div class="list-category">Jumping</div>
+    
+
+        </div>
+      </div>
+    </div>
+    </a>
+  </div>  
+
+
+  <div class="col-lg-4 col-md-6 grid-2">
+    <a href="/play/basketball-stars.html">
+    <div class="game-item">
+      <div class="list-game">
+        <div class="list-thumbnail"><img src="https://boxing2.github.io/img/basketball-stars.png" data-src="https://boxing2.github.io/img/basketball-stars.png" class="small-thumb img-rounded lazyload" alt="Basketball Stars"></div>
+        <div class="list-info">
+          <div class="list-title">Basketball Stars</div>
+          <div class="list-category">Sports</div>
+    
+
+        </div>
+      </div>
+    </div>
+    </a>
+  </div>  
+
+
+  <div class="col-lg-4 col-md-6 grid-2">
+    <a href="/play/tiny-fishing.html">
+    <div class="game-item">
+      <div class="list-game">
+        <div class="list-thumbnail"><img src="https://boxing2.github.io/img/tiny-fishing.png" data-src="https://boxing2.github.io/img/tiny-fishing.png" class="small-thumb img-rounded lazyload" alt="Tiny Fishing"></div>
+        <div class="list-info">
+          <div class="list-title">Tiny Fishing</div>
+          <div class="list-category">Sports</div>
+    
+
+        </div>
+      </div>
+    </div>
+    </a>
+  </div>  
+
+
+  <div class="col-lg-4 col-md-6 grid-2">
+    <a href="/play/smash-karts.html">
+    <div class="game-item">
+      <div class="list-game">
+        <div class="list-thumbnail"><img src="https://boxing2.github.io/img/smash-karts.png" data-src="https://boxing2.github.io/img/smash-karts.png" class="small-thumb img-rounded lazyload" alt="Smash Karts"></div>
+        <div class="list-info">
+          <div class="list-title">Smash Karts</div>
+          <div class="list-category">Action</div>
+    
+
+        </div>
+      </div>
+    </div>
+    </a>
+  </div>  
+
+
+  <div class="col-lg-4 col-md-6 grid-2">
+    <a href="/play/moto-x3m.html">
+    <div class="game-item">
+      <div class="list-game">
+        <div class="list-thumbnail"><img src="https://boxing2.github.io/img/moto-x3m.png" data-src="https://boxing2.github.io/img/moto-x3m.png" class="small-thumb img-rounded lazyload" alt="Moto X3m"></div>
+        <div class="list-info">
+          <div class="list-title">Moto X3m</div>
+          <div class="list-category">Racing</div>
+    
+
+        </div>
+      </div>
+    </div>
+    </a>
+  </div>  
+
+
+  <div class="col-lg-4 col-md-6 grid-2">
+    <a href="/play/moto-x3m-2.html">
+    <div class="game-item">
+      <div class="list-game">
+        <div class="list-thumbnail"><img src="https://boxing2.github.io/img/moto-x3m-2.png" data-src="https://boxing2.github.io/img/moto-x3m-2.png" class="small-thumb img-rounded lazyload" alt="Moto X3m 2"></div>
+        <div class="list-info">
+          <div class="list-title">Moto X3m 2</div>
+          <div class="list-category">Racing</div>
+    
+
+        </div>
+      </div>
+    </div>
+    </a>
+  </div>  
+
+
+
+
+
+  <div class="col-lg-4 col-md-6 grid-2">
+    <a href="/play/getaway-shootout.html">
+    <div class="game-item">
+      <div class="list-game">
+        <div class="list-thumbnail"><img src="https://boxing2.github.io/img/getaway-shootout.png" data-src="https://boxing2.github.io/img/getaway-shootout.png" class="small-thumb img-rounded lazyload" alt="Getaway Shootout"></div>
+        <div class="list-info">
+          <div class="list-title">Getaway Shootout</div>
+          <div class="list-category">Action</div>
+    
+
+        </div>
+      </div>
+    </div>
+    </a>
+  </div>  
+
+
+  <div class="col-lg-4 col-md-6 grid-2">
+    <a href="/play/the-impossible-quiz.html">
+    <div class="game-item">
+      <div class="list-game">
+        <div class="list-thumbnail"><img src="https://boxing2.github.io/img/the-impossible-quiz.png" data-src="https://boxing2.github.io/img/the-impossible-quiz.png" class="small-thumb img-rounded lazyload" alt="The Impossible Quiz"></div>
+        <div class="list-info">
+          <div class="list-title">The Impossible Quiz</div>
+          <div class="list-category">Thinking</div>
+    
+
+        </div>
+      </div>
+    </div>
+    </a>
+  </div>  
+
+
+  <div class="col-lg-4 col-md-6 grid-2">
+    <a href="/play/rooftop-snipers.html">
+    <div class="game-item">
+      <div class="list-game">
+        <div class="list-thumbnail"><img src="https://boxing2.github.io/img/rooftop-snipers.png" data-src="https://boxing2.github.io/img/rooftop-snipers.png" class="small-thumb img-rounded lazyload" alt="Rooftop Snipers"></div>
+        <div class="list-info">
+          <div class="list-title">Rooftop Snipers</div>
+          <div class="list-category">Action</div>
+    
+
+        </div>
+      </div>
+    </div>
+    </a>
+  </div>  
+
+
+  <div class="col-lg-4 col-md-6 grid-2">
+    <a href="/play/rooftop-snipers-2.html">
+    <div class="game-item">
+      <div class="list-game">
+        <div class="list-thumbnail"><img src="https://boxing2.github.io/img/rooftop-snipers-2.png" data-src="https://boxing2.github.io/img/rooftop-snipers-2.png" class="small-thumb img-rounded lazyload" alt="Rooftop Snipers 2"></div>
+        <div class="list-info">
+          <div class="list-title">Rooftop Snipers 2</div>
+          <div class="list-category">Action</div>
+    
+
+        </div>
+      </div>
+    </div>
+    </a>
+  </div>  
+
+
+  <div class="col-lg-4 col-md-6 grid-2">
+    <a href="/play/we-become-what-we-behold.html">
+    <div class="game-item">
+      <div class="list-game">
+        <div class="list-thumbnail"><img src="https://boxing2.github.io/img/we-become-what-we-behold.png" data-src="https://boxing2.github.io/img/we-become-what-we-behold.png" class="small-thumb img-rounded lazyload" alt="We Become What We Behold"></div>
+        <div class="list-info">
+          <div class="list-title">We Become What We Behold</div>
+          <div class="list-category">Adventure</div>
+    
+
+        </div>
+      </div>
+    </div>
+    </a>
+  </div>  
+
+
+  <div class="col-lg-4 col-md-6 grid-2">
+    <a href="/play/house-of-hazards.html">
+    <div class="game-item">
+      <div class="list-game">
+        <div class="list-thumbnail"><img src="https://boxing2.github.io/img/house-of-hazards.png" data-src="https://boxing2.github.io/img/house-of-hazards.png" class="small-thumb img-rounded lazyload" alt="House Of Hazards"></div>
+        <div class="list-info">
+          <div class="list-title">House Of Hazards</div>
+          <div class="list-category">Skill</div>
+    
+
+        </div>
+      </div>
+    </div>
+    </a>
+  </div>  
+
+
+  <div class="col-lg-4 col-md-6 grid-2">
+    <a href="/play/master-chess.html">
+    <div class="game-item">
+      <div class="list-game">
+        <div class="list-thumbnail"><img src="https://boxing2.github.io/img/master-chess.png" data-src="https://boxing2.github.io/img/master-chess.png" class="small-thumb img-rounded lazyload" alt="Master Chess"></div>
+        <div class="list-info">
+          <div class="list-title">Master Chess</div>
+          <div class="list-category">Thinking</div>
+    
+
+        </div>
+      </div>
+    </div>
+    </a>
+  </div>  
+
+
+  <div class="col-lg-4 col-md-6 grid-2">
+    <a href="/play/football-legends.html">
+    <div class="game-item">
+      <div class="list-game">
+        <div class="list-thumbnail"><img src="https://boxing2.github.io/img/football-legends.png" data-src="https://boxing2.github.io/img/football-legends.png" class="small-thumb img-rounded lazyload" alt="Football Legends"></div>
+        <div class="list-info">
+          <div class="list-title">Football Legends</div>
+          <div class="list-category">Sports</div>
+    
+
+        </div>
+      </div>
+    </div>
+    </a>
+  </div>  
+
+
+  <div class="col-lg-4 col-md-6 grid-2">
+    <a href="/play/rocket-soccer-derby.html">
+    <div class="game-item">
+      <div class="list-game">
+        <div class="list-thumbnail"><img src="https://boxing2.github.io/img/rocket-soccer-derby.png" data-src="https://boxing2.github.io/img/rocket-soccer-derby.png" class="small-thumb img-rounded lazyload" alt="Rocket Soccer Derby"></div>
+        <div class="list-info">
+          <div class="list-title">Rocket Soccer Derby</div>
+          <div class="list-category">Sports</div>
+    
+
+        </div>
+      </div>
+    </div>
+    </a>
+  </div>  
+
+
+  <div class="col-lg-4 col-md-6 grid-2">
+    <a href="/play/big-shot-boxing.html">
+    <div class="game-item">
+      <div class="list-game">
+        <div class="list-thumbnail"><img src="https://boxing2.github.io/img/big-shot-boxing.png" data-src="https://boxing2.github.io/img/big-shot-boxing.png" class="small-thumb img-rounded lazyload" alt="Big Shot Boxing"></div>
+        <div class="list-info">
+          <div class="list-title">Big Shot Boxing</div>
+          <div class="list-category">Sports</div>
+    
+
+        </div>
+      </div>
+    </div>
+    </a>
+  </div>  
 
 
 
@@ -215,904 +951,63 @@ Batch Text Replacer Demo ID:505310172
 
 
 
+</div> <!-- end Poplular -->
 
 
 
 
 
 
+<!--           <div class="post-item">
+              <div class="post-media">
+                <div class="post-thumb">
+                  <img title="Play Now" src="https://boxing2.github.io/img/monster-tracks.png" alt="Monster Tracks ">
+                </div>
+                <div class="post-body">
+
+                  <div class="post-intro">
 
 
 
+                  </div>
 
+                   
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<!-- Products Section Three -->
-	<section class="products-section-three">
-		<div class="auto-container">
-
-			
-			<!-- MixitUp Galery -->
-        <div class="mixitup-gallery">
-
-
-          <div class="filter-list row clearfix">
-					
-
-
-
-        
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/retro-bowl.html"><img src="https://h5cdn.github.io/media/retro-bowl.png" alt="Retro Bowl" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/retro-bowl.html">Retro Bowl</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
                 </div>
               </div>
-            </div>
-          </div> 
+            </div> -->
 
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/super-mario-bros.html"><img src="https://h5cdn.github.io/media/super-mario-bros.png" alt="Super Mario Bros" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/super-mario-bros.html">Super Mario Bros</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
 
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/who-is.html"><img src="https://h5cdn.github.io/media/who-is.png" alt="Who Is" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/who-is.html">Who Is</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
 
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/big-shot-boxing.html"><img src="https://h5cdn.github.io/media/big-shot-boxing.png" alt="Big Shot Boxing" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/big-shot-boxing.html">Big Shot Boxing</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/stacktris.html"><img src="https://h5cdn.github.io/media/stacktris.png" alt="Stacktris" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/stacktris.html">Stacktris</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/drift-hunters.html"><img src="https://h5cdn.github.io/media/drift-hunters.png" alt="Drift Hunters" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/drift-hunters.html">Drift Hunters</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/sausage-flip.html"><img src="https://h5cdn.github.io/media/sausage-flip.png" alt="Sausage Flip" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/sausage-flip.html">Sausage Flip</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/moto-road-rash-3d.html"><img src="https://h5cdn.github.io/media/moto-road-rash-3d.png" alt="Moto Road Rash 3D" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/moto-road-rash-3d.html">Moto Road Rash 3D</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/house-of-hazards.html"><img src="https://h5cdn.github.io/media/house-of-hazards.png" alt="House Of Hazards" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/house-of-hazards.html">House Of Hazards</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/geometry-dash.html"><img src="https://h5cdn.github.io/media/geometry-dash.png" alt="Geometry Dash" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/geometry-dash.html">Geometry Dash</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/ovo.html"><img src="https://h5cdn.github.io/media/ovo.png" alt="Ovo" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/ovo.html">Ovo</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/master-chess.html"><img src="https://h5cdn.github.io/media/master-chess.png" alt="Master Chess" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/master-chess.html">Master Chess</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/brain-test-tricky-puzzles.html"><img src="https://h5cdn.github.io/media/brain-test-tricky-puzzles.png" alt="Brain Test: Tricky Puzzles" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/brain-test-tricky-puzzles.html">Brain Test: Tricky Puzzles</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/top-speed-3d.html"><img src="https://h5cdn.github.io/media/top-speed-3d.png" alt="Top Speed 3d" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/top-speed-3d.html">Top Speed 3d</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/stack.html"><img src="https://h5cdn.github.io/media/stack.png" alt="Stack" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/stack.html">Stack</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/rooftop-snipers.html"><img src="https://h5cdn.github.io/media/rooftop-snipers.png" alt="Rooftop Snipers" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/rooftop-snipers.html">Rooftop Snipers</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/fleeing-the-complex.html"><img src="https://h5cdn.github.io/media/fleeing-the-complex.png" alt="Fleeing The Complex" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/fleeing-the-complex.html">Fleeing The Complex</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/among-us.html"><img src="https://h5cdn.github.io/media/among-us.png" alt="Among Us" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/among-us.html">Among Us</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/cluster-rush.html"><img src="https://h5cdn.github.io/media/cluster-rush.png" alt="Cluster Rush" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/cluster-rush.html">Cluster Rush</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/8-ball-pool.html"><img src="https://h5cdn.github.io/media/8-ball-pool.png" alt="8 Ball Pool" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/8-ball-pool.html">8 Ball Pool</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/gold-digger-frvr.html"><img src="https://h5cdn.github.io/media/gold-digger-frvr.png" alt="Gold Digger Frvr" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/gold-digger-frvr.html">Gold Digger Frvr</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/idle-ants.html"><img src="https://h5cdn.github.io/media/idle-ants.png" alt="Idle Ants" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/idle-ants.html">Idle Ants</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/blumgi-rocket.html"><img src="https://h5cdn.github.io/media/blumgi-rocket.png" alt="Blumgi Rocket" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/blumgi-rocket.html">Blumgi Rocket</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/the-impossible-quiz.html"><img src="https://h5cdn.github.io/media/the-impossible-quiz.png" alt="The Impossible Quiz" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/the-impossible-quiz.html">The Impossible Quiz</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/n-gon.html"><img src="https://h5cdn.github.io/media/n-gon.png" alt="N Gon" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/n-gon.html">N Gon</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/temple-run-2.html"><img src="https://h5cdn.github.io/media/temple-run-2.png" alt="Temple Run 2" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/temple-run-2.html">Temple Run 2</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/crazy-cars.html"><img src="https://h5cdn.github.io/media/crazy-cars.png" alt="Crazy Cars" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/crazy-cars.html">Crazy Cars</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/top-speed-racing-3d.html"><img src="https://h5cdn.github.io/media/top-speed-racing-3d.png" alt="Top Speed Racing 3d" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/top-speed-racing-3d.html">Top Speed Racing 3d</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/tunnel-rush.html"><img src="https://h5cdn.github.io/media/tunnel-rush.png" alt="Tunnel Rush" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/tunnel-rush.html">Tunnel Rush</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/escaping-the-prison.html"><img src="https://h5cdn.github.io/media/escaping-the-prison.png" alt="Escaping The Prison" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/escaping-the-prison.html">Escaping The Prison</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/idle-lumber-inc.html"><img src="https://h5cdn.github.io/media/idle-lumber-inc.png" alt="Idle Lumber Inc" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/idle-lumber-inc.html">Idle Lumber Inc</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/chicken-merge.html"><img src="https://h5cdn.github.io/media/chicken-merge.png" alt="Chicken Merge" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/chicken-merge.html">Chicken Merge</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/murder.html"><img src="https://h5cdn.github.io/media/murder.png" alt="Murder" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/murder.html">Murder</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/soccer-skills-world-cup.html"><img src="https://h5cdn.github.io/media/soccer-skills-world-cup.png" alt="Soccer Skills World Cup" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/soccer-skills-world-cup.html">Soccer Skills World Cup</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/stickman-hook.html"><img src="https://h5cdn.github.io/media/stickman-hook.png" alt="Stickman Hook" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/stickman-hook.html">Stickman Hook</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/tiny-fishing.html"><img src="https://h5cdn.github.io/media/tiny-fishing.png" alt="Tiny Fishing" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/tiny-fishing.html">Tiny Fishing</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/offroader-v5.html"><img src="https://h5cdn.github.io/media/offroader-v5.png" alt="Offroader V5" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/offroader-v5.html">Offroader V5</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/madalin-stunt-cars-2.html"><img src="https://h5cdn.github.io/media/madalin-stunt-cars-2.png" alt="Madalin Stunt Cars 2" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/madalin-stunt-cars-2.html">Madalin Stunt Cars 2</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/water-color-sort.html"><img src="https://h5cdn.github.io/media/water-color-sort.png" alt="Water Color Sort" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/water-color-sort.html">Water Color Sort</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/merge-round-racers.html"><img src="https://h5cdn.github.io/media/merge-round-racers.png" alt="Merge Round Racers" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/merge-round-racers.html">Merge Round Racers</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/football-masters.html"><img src="https://h5cdn.github.io/media/football-masters.png" alt="Football Masters" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/football-masters.html">Football Masters</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/4th-and-goal-2022.html"><img src="https://h5cdn.github.io/media/4th-and-goal-2022.png" alt="4th And Goal 2022" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/4th-and-goal-2022.html">4th And Goal 2022</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/football-legends.html"><img src="https://h5cdn.github.io/media/football-legends.png" alt="Football Legends" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/football-legends.html">Football Legends</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/bitlife.html"><img src="https://h5cdn.github.io/media/bitlife.png" alt="Bitlife" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/bitlife.html">Bitlife</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/moto-x3m.html"><img src="https://h5cdn.github.io/media/moto-x3m.png" alt="Moto X3m" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/moto-x3m.html">Moto X3m</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/idle-digging-tycoon.html"><img src="https://h5cdn.github.io/media/idle-digging-tycoon.png" alt="Idle Digging Tycoon" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/idle-digging-tycoon.html">Idle Digging Tycoon</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/we-become-what-we-behold.html"><img src="https://h5cdn.github.io/media/we-become-what-we-behold.png" alt="We Become What We Behold" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/we-become-what-we-behold.html">We Become What We Behold</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/merge-cyber-racers.html"><img src="https://h5cdn.github.io/media/merge-cyber-racers.png" alt="Merge Cyber Racers" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/merge-cyber-racers.html">Merge Cyber Racers</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/cookie-clicker.html"><img src="https://h5cdn.github.io/media/cookie-clicker.png" alt="Cookie Clicker" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/cookie-clicker.html">Cookie Clicker</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/blumgi-ball.html"><img src="https://h5cdn.github.io/media/blumgi-ball.png" alt="Blumgi Ball" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/blumgi-ball.html">Blumgi Ball</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/run-3-editor.html"><img src="https://h5cdn.github.io/media/run-3-editor.png" alt="Run 3 Editor" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/run-3-editor.html">Run 3 Editor</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/drive-mad.html"><img src="https://h5cdn.github.io/media/drive-mad.png" alt="Drive Mad" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/drive-mad.html">Drive Mad</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/highway-traffic.html"><img src="https://h5cdn.github.io/media/highway-traffic.png" alt="Highway Traffic" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/highway-traffic.html">Highway Traffic</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
-
-        
-          <div class="shop-item mix  photography col-lg-2 col-md-6 col-sm-12">
-            <div class="inner-box">
-              <div class="image">
-                <a href="/classroom6x//launch/subway-surfers-newyork.html"><img src="https://h5cdn.github.io/media/subway-surfers-newyork.png" alt="Subway Surfers Newyork" /></a>                
-              </div>
-              <div class="lower-content"> 
-                <h6><a href="/classroom6x//launch/subway-surfers-newyork.html">Subway Surfers Newyork</a></h6>
-                <div class="d-flex justify-content-between align-items-center">            
-                </div>
-              </div>
-            </div>
-          </div> 
+</div> <!-- end container -->
 
 
 
 
 
-					
-				</div>
-				
 
-			</div>
+	<div class="footer-copyright py-4">
+		<div class="container">
+			bigshotboxing.github.io 		<span class="dsb-panel">
+				       <a href="/term.html">Term</a> - <a href="/dmca.html">DMCA</a> - <a href="/policy.html">Policy</a></span>
+
 		</div>
-	</section>
-	<!-- End Products Section Three -->
+	</div>
+
+
+
+	<script type="text/javascript" src="../js/jquery-3.6.2.min.js"></script>
+	<script type="text/javascript" src="../js/lazysizes.min.js"></script>
+	<script type="text/javascript" src="../js/popper.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+
+	<script type="text/javascript" src="../js/script.js"></script>
+	<script type="text/javascript" src="../js/custom.js"></script>
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<!-- Main Footer -->
-    <footer class="main-footer">
-		<div class="pattern-layer-one" style="background-image: url(images/icons/pattern-3.png)"></div>
-		<div class="pattern-layer-two" style="background-image: url(images/icons/vector-2.png)"></div>
-		<div class="auto-container">
-			
-			<!-- Widgets Section -->
-            
-			
-			<!-- Footer Bottom -->
-			<div class="footer-bottom">
-				<div class="d-flex justify-content-between align-items-center flex-wrap">
-					<div class="copyright">Classroom6x.Github.io</div>
-					<!-- <div class="cards"><img src="images/icons/cards.png" alt="" /></div> -->
-				</div>
-			</div>
-			
-		</div>
-	</footer>
-	<!-- End Main Footer -->
-	
-</div>
-<!-- End PageWrapper -->
-
-
-
-<!-- Scroll To Top -->
-<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
-
-<script src="../js/jquery.js"></script>
-<script src="../js/popper.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/magnific-popup.min.js"></script>
-<script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="../js/appear.js"></script>
-<script src="../js/parallax.min.js"></script>
-<script src="../js/tilt.jquery.min.js"></script>
-<script src="../js/jquery.paroller.min.js"></script>
-<script src="../js/owl.js"></script>
-<script src="../js/wow.js"></script>
-<script src="../js/swiper.min.js"></script>
-<script src="../js/touchspin.js"></script>
-<script src="../js/odometer.js"></script>
-<script src="../js/mixitup.js"></script>
-<script src="../js/backToTop.js"></script>
-<script src="../js/jquery.marquee.min.js"></script>
-<script src="../js/nav-tool.js"></script>
-<script src="../js/jquery-ui.js"></script>
-<script src="../js/script.js"></script>
-
-
-
-</body>
+  </body>
 </html>
-<!-- bloxic 6KHMSG7 -->
-#####################
-Batch Text Replacer Demo ID:4679523823
-#####################
